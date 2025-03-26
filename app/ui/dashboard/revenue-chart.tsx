@@ -2,25 +2,22 @@
  * @Description: 
  * @Author: DYT
  * @Date: 2025-03-13 15:40:43
- * @LastEditTime: 2025-03-24 09:46:55
+ * @LastEditTime: 2025-03-26 10:43:25
  * @LastEditors: DYT
  */
 import { generateYAxis } from '@/app/lib/utils';
 import { CalendarIcon } from '@heroicons/react/24/outline';
 import { lusitana } from '@/app/ui/fonts';
-import { Revenue } from '@/app/lib/definitions';
-
+// import { Revenue } from '@/app/lib/definitions';
+import { fetchRevenue } from '@/app/lib/data';
 // This component is representational only.
 // For data visualization UI, check out:
 // https://www.tremor.so/
 // https://www.chartjs.org/
 // https://airbnb.io/visx/
 
-export default async function RevenueChart({
-  revenue,
-}: {
-  revenue: Revenue[];
-}) {
+export default async function RevenueChart() {
+  const revenue = await fetchRevenue(); // Fetch data inside the component
   const chartHeight = 350;
   // NOTE: Uncomment this code in Chapter 7
 
