@@ -1,3 +1,10 @@
+/*
+ * @Description: 
+ * @Author: DYT
+ * @Date: 2025-03-24 13:08:15
+ * @LastEditTime: 2025-03-27 13:57:10
+ * @LastEditors: DYT
+ */
 // This file contains type definitions for your data.
 // It describes the shape of the data, and what data type each property should accept.
 // For simplicity of teaching, we're manually defining these types.
